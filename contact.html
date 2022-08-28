@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="img/Zown.jpg" type="image/x-icon">
+    <title> Manhwa Zown</title>
+</head>
+<body>
+    <nav class="navbar" style="background: linear-gradient(to right, black 30%, rgb(92, 60, 222));">
+        <div class="navbar-content">
+        <img src="img/Zown.jpg" alt="logo" 
+        style="height: 50px; width: 90px;">
+        <div class="navbar-links">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </div>
+        <img src="img/menu_white.jpeg" class="menu-btn">
+        <div class="srchadv">
+            <a href="#">Search</a></li> 
+            <a href="#">Advance</a></li>
+        </div>
+        </div>
+    </nav>
+
+    <section class=" about-us contact-us">
+        <h2>CONTACT US</h2>
+        <br>
+        <hr>
+        <div class="posted">
+            <i class="fa fa-calendar"></i>
+            <div class="date-posted">
+                <h6>posted on</h6>
+                <h5>August 20, 2022</h5>
+            </div>
+        </div>
+        <hr>
+        <p>
+            PLEASE CONTACT TO EMAIL: manhwazown@gmail.com
+        </p>
+    </section>
+
+    <footer>
+        <div>
+            <a href="index.html"><h5 style="border-right: 1px solid black;">HOME</h5></a>
+            <a href="contact.html"><h5 style="border-right: 1px solid black;">CONTACT</h5></a>
+            <a href="about.html"><h5 style="border-right: 1px solid black;">ABOUT US</h5></a>
+            <a href="#"><h5>DMCA</h5></a>
+        </div>
+        <p class="credit">@ 2022 Manhuazone Inc. All rights reserved</p>
+    </footer>
+
+    <script>
+        const toggleButton = document.getElementsByClassName('menu-btn')[0]
+        const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+        toggleButton.addEventListener('click', () => {
+            navbarLinks.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>

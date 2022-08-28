@@ -1,0 +1,443 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+hr{
+    background-color: rgb(210, 207, 207);
+}
+
+.genre, .navbar, .popular-container{
+    width: 100%;
+    padding: 20px 0;
+}
+
+.navbar-content, .genre-content{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-links{
+    margin-left: 50px;
+    width: 100%;
+}
+
+ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+ul li a{
+    font-size: 14px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.srchadv{
+    display: flex;
+}
+
+.srchadv a{
+    color: whitesmoke;
+    text-decoration: none;
+    margin:0 15px;
+}
+
+button{
+    cursor: pointer;
+}
+
+.menu-btn{
+	display: none;
+	width: 40px;
+	height: 40px;
+	z-index: 1;
+	position: absolute;
+	right: 30px;
+    cursor: pointer;
+}
+
+
+.genre .nav-genre{
+    margin-left: 0;
+}
+
+.genre a{
+    color: gray;
+}
+
+.genre a:hover{
+    color: rgb(92, 60, 222);
+}
+
+.nav-genre-bottom{
+    display: none;
+}
+
+.nav-genre-bottom.active-genre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+    background-color: #ccc;
+    padding-bottom: 10px;
+    border-bottom: 5px solid rgb(92, 60, 222);
+    z-index: 2;
+}
+
+.nav-genre-bottom li{
+    padding-top: 10px;
+}
+
+.nav-genre-bottom a{
+    color: rgb(52, 50, 50);
+}
+
+.nav-genre-bottom a:hover{
+    border-bottom: 2px solid rgb(92, 60, 222);
+}
+
+.btn{
+    display: flex;
+}
+
+.btn button{
+    padding: 5px 8px;
+    margin-right: 10px;
+    border-radius: 15px;
+    background-color: white;
+    white-space: nowrap;
+}
+
+/* .popular-content{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: aqua;
+    margin-top: 50px;
+}
+
+.popular-tooltip{
+    background-color: tomato;
+    width: 200px;
+    padding: 5px;
+    text-align: center;
+    font-size: 12px;
+    color: whitesmoke;
+
+
+    transform: translate(20px, -50px);
+} */
+/* Main Container */
+.main-container{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+    min-height: 100vh;
+}
+
+.left-content{
+    width: 75%;
+    margin-right: 4%;
+}
+
+.left-content h4{
+    position: relative;
+    background: linear-gradient(to left, gray, rgb(92, 60, 222));
+    width: 250px;
+    text-align: center;
+    padding: 10px 3px;
+    color: whitesmoke;
+    margin-bottom: 20px;
+}
+
+.manhwa-details{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px 20px;
+}
+
+.box{
+    margin-top: 25px;
+}
+
+.box img{
+    height: 250px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.ch-status{
+    display: flex;
+}
+
+
+.fa-star, .fa-star-half-o{
+    color: yellow;
+    margin: 8px 0;
+}
+
+.chapter-num{
+    background-color: rgb(199, 192, 192);
+    margin-bottom: 8px;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 12px;
+    color: rgb(53, 45, 45);
+    font-weight: 700;
+    white-space: nowrap;
+}
+.status{
+    margin-left: 4px;
+}
+
+.new{
+    background-color: rgb(179, 24, 24);
+    color: whitesmoke;
+    font-size: 11px;
+    padding: 5px;
+    display: inline;
+}
+
+.date{
+    font-size: 12px;
+    color: rgb(100, 98, 98);
+    margin-top: 18px;
+}
+
+.history{
+    background-color: #ddd;
+    border-bottom: 4px solid  rgb(92, 60, 222);
+    padding: 20px 15px;
+    margin-bottom: 40px;
+}
+
+
+.history h5{
+    background: linear-gradient(to left, gray, rgb(92, 60, 222));
+    color: whitesmoke;
+    padding: 5px 0;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.history h5::after, .right-content h4::after, .left-content h4::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 85%;
+    border-width: 10px;
+    border-style: solid;
+    border-color: rgb(92, 60, 222) transparent transparent transparent;
+  }
+
+.history p{
+    color: rgb(107, 105, 105);
+    font-size: 13px;
+}
+
+.right-content{
+    width: 25%;
+    height: 100%;
+    border: 2px solid rgb(210, 207, 207);
+    padding: 0 0 20px 0;
+    margin-top: 50px;
+}
+
+.side-box{
+    display: flex;
+    padding: 0 20px;  
+}
+
+.right-content h4, .right-content button{
+    position: relative;
+    text-align: center;
+    width: 90%;
+    background: linear-gradient(to left, gray, rgb(92, 60, 222));
+    color: whitesmoke;
+    padding: 10px 0;
+    margin: auto;
+}
+
+.right-content button{
+   border: none;
+   display: flex;
+   justify-content: center;
+   font-size: 15px;
+   margin-top: 10px;
+}
+
+.side-box img{
+    height: 100px;
+    width: 75px;
+}
+
+.side-details, .right-content .status{
+    margin-left: 15px;
+}
+
+.right-content .ch-status{
+   padding-top: 10px;
+}
+
+.left-content img, .left-content p, .right-content img, .right-content p{
+    cursor: pointer;
+}
+
+.left-content .ch-status .status p, .left-content .ch-status .chapter-num p,
+.right-content .ch-status .status p, .right-content .ch-status .chapter-num p
+{
+    cursor: auto;
+}
+
+footer{
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 100px;
+
+}
+
+footer p{
+    padding-top: 20px;
+    text-align: center;
+}
+
+footer div{ 
+   display: flex;
+    justify-content: center;
+}
+
+footer div a, footer div h5{
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+footer a, footer p{
+    color: rgb(107, 105, 105);
+}
+
+/* About Page */
+
+.about-us{
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.posted{
+    display: flex;
+    align-items: center; 
+    height: 50px;
+}
+
+.date-posted h5, .date-posted h6 {
+    color: rgb(107, 105, 105);
+    margin-left: 10px;
+}
+
+.about-us p{
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.about-us .reason{
+    margin-top: 30px;
+    padding-top: 0;
+}
+
+.reason p{
+    margin: 8px 0;
+}
+
+.contact-us{
+    margin-top: 150px;
+    height: 40vh;
+}
+
+.contact-us p{
+    font-size: 13px;
+}
+
+
+@media only screen and (max-width:900px){
+    .manhwa-details{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width:1200px){
+    .main-container{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .right-content{
+        width: 100%;
+    }
+
+    .left-content{
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .navbar .navbar-links{
+        display: none;
+    }
+
+    .navbar .navbar-links li{
+        display: block;
+        text-align: center;
+        margin-top: 100px;
+    }
+
+   .navbar-links.active{
+		display: flex;
+        justify-content: center;
+		position: absolute;
+        top: 0;
+		right: 0;
+		width: 100%;
+		height: 100vh;
+		background:  linear-gradient(black, rgb(92, 60, 222));
+		overflow: hidden;
+		z-index: 1;
+        padding-top: 50px;
+	}
+
+    .btn{
+        display: none;
+    }
+
+    .srchadv{
+        position: absolute;
+        right: 80px;
+    }
+
+    .menu-btn{
+		display: block;
+	}
+
+    .left-content{
+        width: 100%;
+    }
+
+    .manhwa-details{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+

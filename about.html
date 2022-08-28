@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="img/Zown.jpg" type="image/x-icon">
+    <title> Manhwa Zown</title>
+</head>
+<body>
+    <nav class="navbar" style="background: linear-gradient(to right, black 30%, rgb(92, 60, 222));">
+        <div class="navbar-content">
+        <img src="img/Zown.jpg" alt="logo" 
+        style="height: 50px; width: 90px;">
+        <div class="navbar-links">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </div>
+        <img src="img/menu_white.jpeg" class="menu-btn">
+        <div class="srchadv">
+            <a href="#">Search</a></li> 
+            <a href="#">Advance</a></li>
+        </div>
+        </div>
+    </nav>
+
+    <section class="about-us">
+        <h2>ABOUT US</h2>
+        <br>
+        <hr>
+        <div class="posted">
+            <i class="fa fa-calendar"></i>
+            <div class="date-posted">
+                <h6>posted on</h6>
+                <h5>August 20, 2022</h5>
+            </div>
+        </div>
+        <hr>
+        <p>Manhwa Zown is a place created by the fans, Created for the fans. 
+            It's a place where you can find high-quality manga online absolutely free. 
+            This website has been made specifically for manga lovers who want to read all kinds of manga, manhwa,
+             and even manhua.
+        </p>
+        <p>
+            Team Manhwa Zown aims ot provide great quality manga related content to of people of all agaes. 
+            The idea is to spread love for manga and share it with people  all around the world. 
+            We believe that the amazing stories in different manga need to be shared with the world. 
+            With that in mind, we created Manhwa Zown and decided to make it free tfor everyone.
+        </p>
+        <p>
+            <b>There's something very unique about manga</b>, it's a great blend of art and text. 
+            Its exquisite story style makes it the perfect way to portray lives of different people as well as characters. 
+            But many people are unable to read manga becausse they don't want to buy it, 
+            they want to be able to read it online for free and there's where Manhwa Zown comes in. 
+            Our idea is exactly to gives the fans what they want. We want to build a platform that anyone 
+            can axxess and read quality manga.
+        </p>
+        <p>
+            We believe that Manga is more that just comic. It's a medium of expression and over time, it has become an art. 
+            The idea that one mangaka can inspire millions of people around the world feels almost magical. 
+            We at Manhwa Zown want to help the people and spread their message. 
+            Manhwa Zown is our little effort to make the manga and anime community a little more accessible. 
+            We believe in the freedom of reading manga and that drives us to pursue our goal of 
+            spreading the love form manga in the world.
+        </p>
+        <div class="reason">
+            <h2>Our Reason for creating Manhwa Zown:</h2>
+            <p>
+            We  have made the website in a way that it's very easy to use. We made all of the sections as simple as possible. 
+            You can bookmark any chapter you want and read it later by signing up. You can also,
+            search up any manga you want easily using the search bar. 
+            If you want us to add any manga/manhwa/manhua that we haven't already added then just email us at manhwazown@gmail.com
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <a href="index.html"><h5 style="border-right: 1px solid black;">HOME</h5></a>
+            <a href="contact.html"><h5 style="border-right: 1px solid black;">CONTACT</h5></a>
+            <a href="about.html"><h5 style="border-right: 1px solid black;">ABOUT US</h5></a>
+            <a href="#"><h5>DMCA</h5></a>
+        </div>
+        <p class="credit">@ 2022 Manhuazone Inc. All rights reserved</p>
+    </footer>
+
+    <script>
+        const toggleButton = document.getElementsByClassName('menu-btn')[0]
+        const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+        toggleButton.addEventListener('click', () => {
+            navbarLinks.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>
